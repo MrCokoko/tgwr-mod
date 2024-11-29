@@ -124,17 +124,45 @@ FRA_ai_only_decision = {
 		}
 		available = {
 			is_ai = yes
-			date > 1914.2.2
+			date > 1914.5.10
 			is_historical_focus_on = yes
+			has_start_date < 1914.1.1	
+			NOT = {
+				has_country_flag = FRA_emergency_mobilization
+			}
 		}
 		visible = {
 			is_ai = yes
 		}
-		fire_only_once = yes
+		fire_only_once = no
 		ai_will_do = {
 			factor = 1000
 		}
 		complete_effect = {
+			set_country_flag = FRA_emergency_mobilization
+			division_template = {
+				name = "Division d'Infanterie"	
+				division_names_group = FRA_INF_01
+				regiments = {
+					infantry = { x = 0 y = 0 }
+					infantry = { x = 0 y = 1 }
+					infantry = { x = 0 y = 2 }
+					infantry = { x = 1 y = 0 }
+					infantry = { x = 1 y = 1 }
+					infantry = { x = 1 y = 2 }
+					infantry = { x = 2 y = 0 }
+					infantry = { x = 2 y = 1 }
+					infantry = { x = 2 y = 2 }
+					infantry = { x = 3 y = 0 }
+					infantry = { x = 3 y = 1 }
+					infantry = { x = 3 y = 2 }
+					artillery_brigade = { x = 3 y = 3 }
+				}
+				support = {
+					recon = { x = 0 y = 0 }
+					engineer = { x = 0 y = 1 }
+				}
+			}
 			if = {
 				limit = {
 					has_army_manpower = {
@@ -146,7 +174,7 @@ FRA_ai_only_decision = {
 						division = "division_template = \"Division d'Infanterie\"	start_experience_factor = 0.1	start_equipment_factor = 0.1"
 						owner = FRA
 						allow_spawning_on_enemy_provs = no
-						count = 24
+						count = 14
 					}
 				}
 			}
@@ -161,7 +189,7 @@ FRA_ai_only_decision = {
 						division = "division_template = \"Division d'Infanterie\"	start_experience_factor = 0.1	start_equipment_factor = 0.1"
 						owner = FRA
 						allow_spawning_on_enemy_provs = no
-						count = 24
+						count = 14
 					}
 				}
 			}
@@ -176,7 +204,7 @@ FRA_ai_only_decision = {
 						division = "division_template = \"Division d'Infanterie\"	start_experience_factor = 0.1	start_equipment_factor = 0.1"
 						owner = FRA
 						allow_spawning_on_enemy_provs = no
-						count = 24
+						count = 14
 					}
 				}
 			}
@@ -1588,6 +1616,7 @@ FRA_defense_of_france = {
 			19 = {
 				is_owned_and_controlled_by = ROOT
 			}
+			controls_province = 9737
 			NOT = {
 				capital_scope = {
 					state = 19
@@ -1608,19 +1637,22 @@ FRA_defense_of_france = {
 		}
 		visible = {
 			tag = FRA
+			has_civil_war = no
 			NOT = {
+				any_enemy_country = {
+					original_tag = FRA
+				}
 				has_global_flag = great_war_ends
-			}
-			any_enemy_country = {
-				is_major = yes
-			}
-			NOT = {
 				capital_scope = {
 					state = 19
 				}
 			}
+			any_enemy_country = {
+				is_major = yes
+			}
 		}
-
+		fire_only_once = no
+		days_re_enable = 70
 		complete_effect = {
 			set_capital = { state = 19 }
 		}
@@ -1633,29 +1665,20 @@ FRA_defense_of_france = {
 		}
 		cost = 25
 		available = {
-			capital_scope = {
-				any_neighbor_state = {
-					NOT = {
-						is_fully_controlled_by = ROOT
-					}
-				}
-			}
-			any_enemy_country = {
-				is_major = yes
-			}
 			16 = {
 				is_owned_and_controlled_by = ROOT
 			}
-			NOT = {
-				capital_scope = {
-					state = 16
-				}
-			}
+			controls_province = 11506
 		}
 		ai_will_do = {
 			base = 500
 			modifier = {
 				surrender_progress > 0.10
+				factor = 0
+			}
+			modifier = {
+				has_global_flag = great_war
+				NOT = { has_global_flag = great_war_ends }
 				factor = 0
 			}
 		}
@@ -1666,19 +1689,20 @@ FRA_defense_of_france = {
 		}
 		visible = {
 			tag = FRA
+			has_civil_war = no
+			owns_state = 16
 			NOT = {
-				has_global_flag = great_war_ends
-			}
-			any_enemy_country = {
-				is_major = yes
-			}
-			NOT = {
+				any_enemy_country = {
+					original_tag = FRA
+				}
 				capital_scope = {
 					state = 16
 				}
+				has_country_flag = FRA_nationalist_france_flag
 			}
 		}
-
+		fire_only_once = no
+		days_re_enable = 70
 		complete_effect = {
 			set_capital = { state = 16 }
 		}

@@ -177,6 +177,7 @@
  GER_schlieffen_plan:0 "Schlieffen Plan"
  GER_dual_alliance:0 "Honour Dual Alliance"
  GER_dual_alliance_desc:0 "Our alliance with Austria-Hungary means that we promise to support each other in case of attack by Russia. We must help our Austrian friends defeat Russia."
+ GER_setup_belgian_occupation_zone:0 "Setup Kaiserliches Deutsches Generalgouvernement Belgien"
  GER_schliffenmoltkeplan:0 "Schlieffen-Moltke Plan"
  GER_schliffenmoltkeplan_desc:0 "Schlieffen-Moltke Plan means that we will attack Belgium and Luxembourg to march straight into Paris."
  GER_schliffen1905plan:0 "Schlieffen Plan"
@@ -227,6 +228,7 @@
  GER_form_baltic_duchy:0 "Form Baltic Duchy"
  GER_form_georgia:0 "Form Kingdom of Georgia"
  GER_form_netherlands:0 "Form Netherlands"
+ GER_form_ireland:0 "Form Kingdom of Ireland"
  GER_unite_baltics:0 "Unite the Baltics"
  GER_help_white_russia:0 "Help White Russia"
  GER_help_white_russia_desc:0 "While Lenin and his Bolsheviks did secure our victory on the Eastern Front with their sabotage of the war effort and the subsequent coup, their regime and antics are no longer needed. Their ideals of Communism and World Revolution threaten the very foundation of a German European order, and thus directly contradict our hold of power. It's better to neutralise this threat on our Eastern flanks, and turn the red tide."
@@ -292,12 +294,6 @@
  GER_prussian_appoint_hitler:0 "March on Berlin"
  GER_prussian_appoint_hitler_desc:0 "Adolf Hitler's National Socialist movement is gaining popularity. They want to revive the German people from the depths of defeat. Some classify them as far-left and some as far-right, because of their extreme and unknown ideas, but maybe they can make Germany great again.\nAnd with a little help, they will come to power bloodless."
  GER_landsturm_deployment:0 "\nAllow the deployment of §Y"Landsturm"§! divisions made up of §Y9 infantry§! and a §Ysupport company§!."
- GER_decision_form_landsturm:0 "Landsturm Formation"
- GER_mobilization_effort:0 "Mobilization Effort"
- GER_reserve_guns:0 "Provide Reserve Rifles"
- GER_reserve_guns_desc:0 "We have old rifle reserves in our warehouses. Although they are dated, these weapons can still be useful to us."
- GER_form_landsturm_brigades:0 "Deploy 5 Landsturm Divisions"
- GER_form_landsturm_brigades_desc:0 "The "landsturm" divisions come from the mobilization of men aged 30 to 50 years. These inexperienced and poorly performing auxiliary groups remain useful in support in low-risk areas."
  back_in_30_days:0 "\nThis §Ydecision§! will show up again in §Y30 days§!."
  back_in_45_days:0 "\nThis §Ydecision§! will show up again in §Y45 days§!."
  back_in_60_days:0 "\nThis §Ydecision§! will show up again in §Y60 days§!."
@@ -466,6 +462,38 @@
  FRA_fortifications:0 "French Fortifications"
  FRA_fortifications_desc:0 "Many forts were built following the Séré de Rivières defense plan between 1870 and 1890. Most of these fortresses are no longer in use or obsolete due to lack of maintenance or outdated equipment. With some renovations, these structures could be used again."
 
+ BEL_1912_talks_success:0 "§YAnglo-Belgian Talks§! were successful"
+
+ BEL_apply_the_tripartite_pact:0 "Enact the Tripartite Pact"
+ BEL_apply_the_tripartite_pact_desc:0 "The situation in Europe threatens Belgian territorial integrity too seriously to be ignored. We must align ourselves with the Entente now."
+
+ BEL_fortifications:0 "Belgian Fortification Renovations"
+ BEL_fortifications_desc:0 "The renovation of Belgian military bastions is an essential deterrent to our defense, but also to maintaining our neutrality."
+
+ BEL_ethnic_lower_command_initiative:0 "Ethnic Lower-Command Initiative"
+ BEL_ethnic_lower_command_initiative_desc:0 "To be effective, officers at the front must be able to take local initiatives and communicate with a bilingual level capable of understanding them immediately. Each senior officer must know how to speak French and Flemish."
+
+ BEL_machinegun_production_and_assignation:0 "Machinegun Production and Assignation"
+ BEL_machinegun_production_and_assignation_desc:0 "The production of machine guns and their distribution in small auxiliary units within divisions will make it possible to create more tenacious pockets of defense, but also to attack well-defended positions."
+
+ BEL_new_uniforms:0 "New Uniforms"
+ BEL_new_uniforms_desc:0 "Belgian uniforms have been in service since 1830, hats must be changed into helmets, and tunics must be adapted to the notions of camouflage, reliability and resistance."
+
+ BEL_hollogne_fort:0 "Hollogne Fort"
+ BEL_hollogne_fort_desc:0 "The fort was built between 1888 and 1892 under the command of General Brialmont, the father of modern fortification. Unlike the French forts of that time, Fort Hollogne was constructed entirely of unreinforced concrete, a relatively new material at the time."
+ BEL_wallonia_fort_text:0 "Adds §Y1 Land Fort§! in §Y[34.GetName].§!"
+ BEL_flanders_fort_text:0 "Adds §Y1 Land Fort§! in §Y[6.GetName].§!"
+ BEL_flemalle_fort:0 "Flémalle Fort"
+ BEL_flemalle_fort_desc:0 "Built between 1888 and 1892 under the command of General Brialmont, Fort Flémalle became one of the 12 forts of the fortified belt of Liège. With its quadrangular shape, surprising for its time, it’s also one of the most massive. Like most of the Liège forts, it was built entirely of unreinforced concrete. Located about ten kilometers southwest of Liège, it was strategically positioned to block access to the Meuse Valley in case of an enemy attack."
+ BEL_barchon_fort:0 "Barchon Fort"
+ BEL_barchon_fort_desc:0 "Fort Barchon, located in the northeast of Liege, is one of the 12 forts of the fortified position of Liège. Its architecture and armament are comparable to those of Fort Loncin."
+ BEL_namur_fortress_ring:0 "Namur Fortress Ring"
+ BEL_namur_fortress_ring_desc:0 "The first modern forts at Namur were built between 1888 and 1892 on the initiative of the Belgian General Henri Brialmont. The forts were built in a ring around Namur about 7 km from the city center.\n\nThe forts were built to standard plans and were typically triangular to minimize the number of defensive batteries in the forts' defensive ditches, presenting their apex to the attacker. Construction began on 28 July 1888 by a French consortium, Hallier, Letellier Frères and Jules Barratoux."
+ BEL_antwerpen_fortress_ring:0 "Antwerpen Fortress Ring"
+ BEL_antwerpen_fortress_ring_desc:0 "The official name of the Antwerp fortress was “Position fortifiée d'Anvers” or “PFA”. It consisted of an inner and an outer defensive belt made up of fortresses and sconces. It had both older and newer buildings, built and improved from 1859 and deserve some final modernization"
+ BEL_citadel_of_dinant:0 "Citadel of Dinant"
+ BEL_citadel_of_dinant_desc:0 "The current fort was built in 1815 on a site which was originally fortified in 1051 when the region was ruled by the Prince-Bishopric of Liège. The citadel overlooks the city of Dinant and the strategic Meuse river which runs through the town."
+
  decision_cost_4_civ:0 "£civ_factory£ §Y4§!"
  decision_cost_3_civ:0 "£civ_factory£ §Y3§!"
  FRA_340mm_mle_1893:0 "Build 340mm canon modèle 1893"
@@ -475,7 +503,7 @@
  fight_phan_xich_long_loyalists_in_indochina:0 "Fight Phan Xich Long Loyalists"
 
 
- BUL_AUH_could_support_us:0 "§Y[AUH.getName]§! will receive a proposition of economic and military cooperation, making them able to support our claims."
+ BUL_AUH_could_support_us:0 "([AUH.getFlag]) §Y[AUH.getName]§! will receive a proposition of Economic and Military Cooperation, §Rmaking them able to support our claims§!.\n\n"
  BUL_weapon_order:0 "Worldwide Arms Market"
  BUL_order_guns_from_france:0 "Order Guns From France"
  BUL_buy_british_uniforms:0 "Buy British Uniforms"
@@ -678,10 +706,10 @@
 
 
  AUH_core_romania:0 "§Y[TRA.getFlag] Transylvania§! will be fully integrated part of the §Y[HUN.getFlag] Hungarian Empire§!."
- AUH_core_slovakia:0 "§Y[SLO.getFlag] Slovakia§! will be fully integrated part of the §Y[HUN.getFlag] Hungarian Empire§!."
+ AUH_core_slovakia:0 "\nAll Terrorists activities in §Y[SLO.getFlag] Slovakia§! will stop."
  AUH_core_croatia:0 "§Y[CRO.getFlag] Croatia§! will be fully integrated part of the §Y[HUN.getFlag] Hungarian Empire§!."
  AUH_core_galicia:0 "§Y[GAL.getFlag] Galicia§! will be fully integrated part of the §Y[AUH.getFlag] Austro-Hungarian Empire§!."
- AUH_spawn_2_guards_divisions_to_presporok:0 "\n\n§Y2 Divisions§! composed with §Y6 Infantry units§! and §YArtillery support§! will by deployed to §YPrešporok§!."
+ AUH_spawn_2_guards_divisions_to_presporok:0 "\n§Y2 Divisions§! composed with §Y6 Infantry units§! and §YArtillery support§! will by deployed to §YPrešporok§!."
  AUH_spawn_3_guards_divisions_to_zagreb:0 "§Y3 Divisions§! composed with §Y6 Infantry units§! will by deployed to §YZagreb§!."
  AUH_spawn_2_guards_divisions_to_cluj:0 "§Y2 Divisions§! composed with §Y6 Infantry units§! will by deployed to §YCluj§!."
  AUH_invalidated_croatian_constitution:0 "Unlockss §Y[CRO.getFlag] Croatian industrial focuses§!."
@@ -693,10 +721,10 @@
  AUH_ferenc_kossuth_can_be_appointed:0 "Ferenc Kossuth can be appointed"
  AUH_gyula_justh_can_be_appointed:0 "Gyula Justh can be appointed"
  AUH_istvan_tisza_can_be_appointed:0 "István Tisza can be appointed"
- AUH_the_kaiser_will_appoint_the_prime_minister:0 "§Y[ROOT.getLeader] will appoint a prime minister.§!"
+ AUH_the_kaiser_will_appoint_the_prime_minister:0 "§YThe King will appoint the prime minister.§!"
  in_30_days:0 "This event will spawn in §Y30 days§!."
  in_600_days:0 "This event will spawn in §Y600 days§!."
- cant_be_replaced:0 "§RCant Be Replaced§!"
+ cant_be_replaced:0 "§RCan't be replaced§!"
 
  AUH_wehrpflichtige_abteilung:0 "\nAllow the deployment of §Y"Wehrpflichtige Abteilung"§! divisions made up of §Y9 infantry§! and a §Yartillery company§!.\n\n"
  AUH_form_AUH_wehrpflichtige_abteilung:0 "Wehrpflichtige Abteilung Formation"
@@ -860,7 +888,7 @@
  FRA_railway_unification_in_morbihan:0 "Railways Unification in Morbihan"
  FRA_railway_unification_in_morbihan_desc:0 "§YArmand Fallières's§! bill aims to declare the unification of railways in eastern Morbihan to be in the public interest. In particular, the construction of a railway line between the coastal town of Port-Louis which would join the  village of Trinité-Porhoët is proposed.\n\nThe Brittany region will also receive government authorizations aimed at connecting existing lines and renovating at-risk routes."
  FRA_railway_unification_in_morbihan_done:0 "Railways Unification in Morbihan Passed"
- FRA_lorient_rennes_railways:0 "This railway connect §YLorient§! and §YRennes§!."
+ FRA_lorient_rennes_railways:0 "This railway connects §YLorient§! and §YRennes§!."
  
  FRA_railway_expansion_in_algeria:0 "Railway Expansion in Algeria"
  FRA_railway_expansion_in_algeria_desc:0 "The development of rural Algeria is a priority of the government, the bill presented by §YArmand Fallières§! proposes the construction of two railway lines in eastern Algeria. A first route between Bizot and Djidjelli, a second between  Constantine and Oued-Athménia."
@@ -1004,9 +1032,9 @@
  FRA_appoint_regional_governor:0 "Appoint Regional Governors"
  FRA_appoint_regional_governor_desc:0 "In order to finalize the administrative reform of the provinces, §YNapoléon§! proposed a law allowing the creation of regional governors. These governors would have extensive powers and a dedicated council to improve the management of the  regions."
  
- FRA_allow_to_chose_a_popular_figure:0 "§GIn theses difficult times, we will be able to chose a §YPopular Figurehead§! to support out governement.§!"
+ FRA_allow_to_chose_a_popular_figure:0 "§GIn theses difficult times, we will be able to chose a §YPopular Figurehead§! to support out government.§!"
  
- FRA_could_be_a_popular_figurehead:0 "§LWe could use him as a §YPopular Figurehead§! in favor of our governement...§!"
+ FRA_could_be_a_popular_figurehead:0 "§LWe could use him as a §YPopular Figurehead§! in favor of our government...§!"
  
  FRA_rename_AF_to_comites_napoleoniens_imperialistes:0 "Unite most of the §gRestorationists§! deputies under a new party called £parliament_party_icon|9 §g\"Comités Napoléoniens Impérialistes\"§!."
  FRA_bonaparte_legislative_elections_done:0 "Special Legislative Elections are done"
@@ -1056,6 +1084,7 @@
 
  FRA_police_security_enforcement_act:0 "Police Security Enforcement Act"
  FRA_police_security_enforcement_act_desc:0 "§YAuguste Isaac§!'s bill defining in the law sectors of strategic activity for which strikes cannot be authorized. This expansion of existing safety laws applies to railway workers, water, fuel and food supply services. The law also regulates certain public service positions."
+ FRA_less_strike_will_occur:0 "Less §RStrikes§! will occur in the future."
 
  FRA_second_security_act:0 "Second Security Act"
  FRA_second_security_act_desc:0 "Deputy §YHumbert§! proposed a rewrite of the security law passed recently by both chambers. Because of the second file case, it appears clear that the law against Masonic lodges and the police security law can be merged into a new, broader law. This project would condemn political organizations opposed to national interests such as the army, education, territorial integrity and more broadly French interests abroad.\n\nIt also allows us to take into consideration the links between the socialists and the card affair in an official manner, sanctioning these groups."
@@ -1079,6 +1108,9 @@
  BOS_independist_terrorism:0 "Bosnian Terrorist Operation"
  AUH_local_independentism:0 "Local Independentism"
 
+ BOS_suspend_bosnian_diet:0 "Suspend Bosnian Diet"
+ BOS_suspend_bosnian_diet_desc:0 "The situation in the Balkans has become too difficult for us to authorize social or democratic movements going against our interests."
+
  AUH_italian_states:0 "Click to see [ITA.getFlag] Italian states"
  AUH_romanian_states:0 "Click to see [ROM.getFlag] Romanian states"
  ITA_focus_on_state:0 "Prepare Resistance Operations in [ITA.getFlag] Italian Tyrol"
@@ -1099,7 +1131,7 @@
  member_of_entente_armistice:0 "Refuse to Surrender"
  member_of_entente:0 "Enemy of Central Powers\n"
  member_of_centre_armistice:0 "Refuse to Surrender"
- refuse_to_surrender_tt:0 "You will §Yremain at war without peace§!.\n\\n§RARCADE FEATURE. This can lead to undesirable results. (e.g. broken borders, political events).§!"
+ refuse_to_surrender_tt:0 "You will §Yremain at war without peace§!.\n\n§RARCADE FEATURE. This can lead to undesirable results. (e.g. broken borders, political events).§!"
  compiegne_armistice:0 "Armistice of Compiègne\n"
  compiegne_armistice_mission:0 "Armistice of Compiègne"
  compiegne_armistice_message:0 "§YFrance§! and §YEntente§! are victorious. §YGermany§! and §Yher allies§! will have to pay the prices demanded by the victors in the post-war treaty."
@@ -1274,6 +1306,7 @@
  SOV_decision_soviet_republics:0 "Soviet Republics"
  SOV_decision_soviet_republics_desc:0 "Many movements have tried to declare their independence after the fall of the Russian Empire after our great socialist revolution and they must be re-integrated. There are many supporters of our cause in these areas, we can try help them out to spread revolution further!"
  SOV_soviet_mountain:0 "Soviet North Caucasus"
+ treaty_of_batum:0 "Treaty of Batum has been signed"
  SOV_soviet_azerbaijan:0 "Soviet Azerbaijan"
  SOV_soviet_armenia:0 "Soviet Armenia"
  SOV_soviet_georgia:0 "Soviet Georgia"
@@ -1445,6 +1478,8 @@
  GRE_balkan_war_desc:0 "Thessaloniki has been under Ottoman occupation for nearly 500 years, it is time we liberate it from its foreign rule and return it to its rightful owners. We need to hurry, as Bulgaria also has aspirations to capture the city due to its small Bulgarian population. Being one of the most important cities of the Ottoman empire, and a major trading hub, it is also of great strategic importance."
  GRE_capture_thessaloniki:0 "Capture Thessaloniki!"
  GRE_national_schism:0 "The National Schism"
+ GRE_return_capital:0 "Return Capital to Athens"
+ GRE_return_capital_desc:0 "Now that we've regained control of the Attica peninsular, it's time to head back to Athens, the long-standing capital of the Hellenes."
  
  london_conference:0 "London Conference of [GetYear]"
 
@@ -1460,14 +1495,8 @@
  coalition_send_rifles:0 "Support [FROM.GetNameDef]"
  balkan_league_fail:0 "§5The Balkan League§! has failed to form"
  balkan_league_success:0 "§5The Balkan League§! has formed"
- 
- ROM_balkan_war_intervention_decision:0 "Intervention in Balkan War"
- ROM_great_war_intervention:0 "Join the Great War"
- ROM_great_war_surrender:0 "Surrender To Germany"
- ROM_great_war_rejoin:0 "Rejoin the Great War"
- ROM_sue_for_peace_HUN:0 "Offer Surrender Terms to [HUN.GetName]"
- ROM_army_reform_decision:0 "Army Reorganization"
- 
+
+
  MOL_join_romania:0 "Join Romania"
  moldovian_indepedence_timer:0 "Moldavia has gained independence recently"
  
@@ -1721,26 +1750,7 @@
  CHI_ANC_conquer_mongolia:0 "Annex Mongolia"
  CHI_decision_invade_tibet:0 "Annex Tibet"
  CHI_decision_invade_tibet_desc:0 "Tibet is recognized by no one, since it is rightful Chinese territory."
- CHI_unite_china_XSM:0 "Fate of [XSM.GetName]"
- CHI_unite_china_SHX:0 "Fate of [SHX.GetName]"
- CHI_unite_china_SIK:0 "Fate of [SIK.GetName]"
- CHI_unite_china_PRC:0 "Fate of [PRC.GetName]"
- CHI_unite_china_YUN:0 "Fate of [YUN.GetName]"
- CHI_unite_china_ZHE:0 "Fate of [ZHE.GetName]"
- CHI_unite_china_SCC:0 "Fate of [SCC.GetName]"
- CHI_unite_china_GXC:0 "Fate of [GXC.GetName]"
- CHI_unite_china_GDC:0 "Fate of [GDC.GetName]"
- CHI_unite_china_HNC:0 "Fate of [HNC.GetName]"
- CHI_unite_china_JXC:0 "Fate of [JXC.GetName]"
- CHI_unite_china_JNC:0 "Fate of [JNC.GetName]"
- CHI_unite_china_ZHC:0 "Fate of [ZHC.GetName]"
- CHI_unite_china_GZC:0 "Fate of [GZC.GetName]"
- CHI_unite_china_FNG:0 "Fate of [FNG.GetName]"
- CHI_unite_china_SDC:0 "Fate of [SDC.GetName]"
- CHI_unite_china_ANC:0 "Fate of [ANC.GetName]"
- CHI_unite_china_SHN:0 "Fate of [SHN.GetName]"
- CHI_unite_china_YLN:0 "Fate of [YLN.GetName]"
- CHI_unite_china_GAN:0 "Fate of [GAN.GetName]"
+ CHI_unite_china_FROM:0 "Fate of [FROM.GetName]"
  national_protection_war:0 "National Protection War"
  CHI_national_protection_flag:0 "National Protection Army"
  CHI_sue_for_peace_NPA:0 "Cancel the Declaration of Empire of China"
@@ -8502,6 +8512,8 @@ ottoman_minority_tt_desc_edirne_tt:0 "[ottoman_minority_tt_desc_edirne][TUR_otto
  IRE_irish_civil_war_timer:0 "Irish Civil War"
  IRE_cold_war_goes_hot:0 "Invade [NIR.GetNameDef]"
  IRE_sue_for_peace_ENG:0 "Accept the Irish Free State"
+ IRE_invite_german_monarch:0 "Invite A German Monarch"
+ IRE_invited_german_monarch:0 "§Y[IRE.GetFlag]Ireland§! has invited a German monarch"
  
  PER_persian_british_sphere_states:0 "[ENG.GetAdjective] Sphere in Persia"
  PER_persian_russian_sphere_states:0 "[RUS.GetAdjective] Sphere in Persia"
@@ -8596,7 +8608,7 @@ ottoman_minority_tt_desc_edirne_tt:0 "[ottoman_minority_tt_desc_edirne][TUR_otto
  HJZ_declare_arab_nation:0 "Declare the Unification of Arabia"
  HJZ_declare_arab_nation_tt:0 "Owns and Controls §YHejaz, Syria, and Iraq§!"
  
- BUL_buy_weapons_from_majors:0 "Unlocks several decisions allowing §YWeapon Purchases§! from §YGreat Powers§!."
+ BUL_buy_weapons_from_majors:0 "Unlocks several £decision_icon_small §YDecisions§! enabling §YWeapon Purchases§! from Europe's §YGreat Powers§!."
  sue_for_peace_TUR:0 "Sue for Peace With [TUR.getFlag][TUR.GetNameDef]"
  BUL_sue_for_peace_SER:0 "Offer Surrender Terms to League"
  BUL_sue_for_peace_ROM:0 "Offer Surrender Terms to Romania"
@@ -8689,9 +8701,6 @@ ottoman_minority_tt_desc_edirne_tt:0 "[ottoman_minority_tt_desc_edirne][TUR_otto
  ban_neutral_party:0 "Ban Authoritarianism"
  ban_neutral_party_desc:0 "In the current situation, allowing authoritarian parties to continue to organize would undermine our ability to govern effectively. Drastic measures will need to be taken."
  ban_neutral_party_tt:1 "Change in popularity of Authoritarianism: §G-§![?.Root.party_popularity@neutrality|%0G].\n"
-
- anti_neutrality_raids:0 "Anti-Authoritarian Raids"
- anti_neutrality_raids_desc:0 "We must crack down on authoritarian elements in our nation for the sake of long-term domestic stability. Their influence is too great, and may potentially become a problem to the government."
 
  SWE_staaff_emergency:0 "Staaff's Popularity"
  SWE_staaff_emergency_desc:0 "Prime Minister Staaff's popularity- or lack thereof- is becoming a pressing issue in Swedish politics. It seems only a matter of time until the Conservatives and the Militarists force him out, and the only question is how much he can get done before they do."
@@ -9282,6 +9291,7 @@ july_crisis_alert_tt:0 "§RThe July crisis§! begins, opposing §Y[AUH.getFlag][
 
 FRA_vote_will_fail:0 "§RThe vote will likely fail.§!"
 FRA_vote_will_pass:0 "§GThe vote shall pass !§!"
+FRA_vote_will_pass_by_majority:0 "§cWe cant make the law pass, but this law is approved by the majority, §!§Gthey shall vote it!§!"
 FRA_effect_if_law_pass:0 "\n§YEffect if the vote passes:§!"
 FRA_effect_if_law_fail:0 "\n§REffect if the vote fail:§!"
 FRA_effect_if_mission_completed:0 "\n§GEffect if mission is completed :§!"
@@ -9353,4 +9363,19 @@ FRA_worker_safety_law_desc:0 "The law proposed by Deputy §YAristide Briand§! a
 FRA_salary_limitation_act:0 "Salary Limitation Act"
 FRA_salary_limitation_act_desc:0 "The law proposed by §YMaurice Thorez§! define a calculation formula limiting the maximum salary within a company based on its profits, the number of employees and the lowest salary. To resume it in its simplest form, it limits the maximum salary to 25 times the lowest salary in the company."
 
+FRA_calimites_exceptional_fundings:0 "Allowances for Climate Victims"
+FRA_calimites_exceptional_fundings_desc:0 "A bill proposed by Prime Minister §YAristide Briand§! to the tune of 500,000 francs aimed at coming to the aid of farmers who are victims of climate change. A second allocation of 1,000,000 francs is also planned to come to the aid of victims of floods in January 1910."
+
+FRA_limitation_of_strike_right:0 "Limitation of Strike Right"
+FRA_limitation_of_strike_right_desc:0 "The massive and recurrent strikes affecting France are limiting the capacities and the economy and the production of wealth. This handicap limits our capabilities, both in industrial independence and in maintaining the war economy.\n\n§YAristide Briand§! proposed minimal reforms making it easier to mobilize essential industries, even on strike, when national interests are threatened."
+
+FRA_exceptional_credits_for_colonial_maroc:0 "Exceptional Credits for Moroccan Garisons"
+FRA_exceptional_credits_for_colonial_maroc_desc:0 "The president of the council §YArmand Fallière§! proposed the exceptional increase in the budget of the colonial troops of Morocco. The special allocation amounts to 8,680,000 francs intended to secure the region at all costs."
+
+FRA_military_expedition_in_tchad:0 "Military Expedition in Tchad"
+FRA_military_expedition_in_tchad_desc:0 "Anti-French resistance in Chad remains significant despite the first intervention in 1910. It seems necessary to intervene a second time by passing a special budget estimated at 8 million francs intended to confront the last sub-Sharian rebel bastions."
+
  DEN_ICE_act_of_union:0 "@DEN @ICE Danish–Icelandic Act of Union"
+
+SFIO_allied:0 "Is in Coalition with£parliament_party_icon|1 §RSFIO§!"
+
